@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Settings</title>
+    <link rel="stylesheet" href="Settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="brand-logo">SkillBridge</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-briefcase"></i> Browse Jobs</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-file-invoice-dollar"></i> My Bids</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-shield-halved"></i> My Skills</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-wallet"></i> Earnings</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="#" class="nav-item active"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+            <div class="sidebar-user">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar-circle">
+                <div class="user-meta">
+                    <p class="name">Alex Chen</p>
+                    <p class="role">Freelancer</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search jobs, freelancers, or skills...">
+                </div>
+                <div class="header-right">
+                    <div class="notif-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="badge-dot"></span>
+                    </div>
+                    <div class="profile-pill">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar-small">
+                        <span>Alex Chen</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="settings-container">
+                <div class="page-title">
+                    <h1>Settings</h1>
+                    <p>Manage your account settings and preferences</p>
+                </div>
+
+                <section class="card tabs-card">
+                    <nav class="settings-tabs">
+                        <a href="#" class="tab-item active"><i class="fa-regular fa-user"></i> Profile</a>
+                        <a href="#" class="tab-item"><i class="fa-solid fa-lock"></i> Password</a>
+                        <a href="#" class="tab-item"><i class="fa-regular fa-bell"></i> Notifications</a>
+                    </nav>
+                </section>
+
+                <section class="card profile-form-card">
+                    <h2>Profile Settings</h2>
+                    
+                    <div class="form-group photo-section">
+                        <label>Profile Photo</label>
+                        <div class="photo-controls">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar-large">
+                            <button class="btn-outline">Upload New Photo</button>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label>Full Name</label>
+                            <input type="text" value="Alex Chen" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group flex-1">
+                            <label>Email</label>
+                            <input type="email" value="alex@example.com" placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tagline</label>
+                        <input type="text" value="Full-stack developer specializing in React and Node.js" placeholder="Briefly describe what you do">
+                    </div>
+
+                    <button class="btn-save">Save Changes</button>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

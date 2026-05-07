@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+}
+
+.container {
+    display: flex;
+    margin-left: 250px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #1e2a78;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.logo {
+    margin-bottom: 30px;
+}   
+
+.menu {
+    list-style: none;
+    flex: 1;
+}
+
+.menu li {
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu li:hover,
+.menu .active {
+    background: #2f3dbb;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #00c896;
+    border-radius: 50%;
+}
+
+.avatar.small {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar.profile-pic {
+    background: none;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.top-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filters input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.filters select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+    background-color: white;
+    font-family: "Segoe UI", sans-serif;
+    cursor: pointer;
+}
+
+.subtitle {
+    color: gray;
+}
+
+.showing {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Jobs */
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Card */
+.job-card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+/* Top */
+.job-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    text-align: right;
+}
+
+.price small {
+    color: gray;
+}
+
+/* Meta */
+.meta {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    color: gray;
+    margin: 8px 0;
+}
+
+/* Tags */
+.tags {
+    margin: 10px 0;
+}
+
+.tags span {
+    background: #e6f7f1;
+    color: #00a67e;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+/* Bottom */
+.job-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* Button */
+button {
+    background: #2f3dbb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e2a78;
+}
+
+.view-details-btn {
+    background: #2f3dbb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.view-details-btn:hover {
+    background: #1e2a78;
+}

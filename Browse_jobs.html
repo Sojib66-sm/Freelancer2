@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge</title>
+    <link rel="stylesheet" href="Browse_jobs.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2 class="logo">SkillBridge</h2>
+
+        <ul class="menu">
+            <li><i class="fa fa-home"></i> Home</li>
+            <li class="active"><i class="fa fa-briefcase"></i> Browse Jobs</li>
+            <li><i class="fa fa-folder"></i> My Bids</li>
+            <li><i class="fa fa-brain"></i> My Skills</li>
+            <li><i class="fa fa-dollar-sign"></i> Earnings</li>
+            <li><i class="fa fa-bell"></i> Notifications</li>
+            <li><i class="fa fa-cog"></i> Settings</li>
+        </ul>
+
+        <div class="profile">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar profile-pic">
+            <div>
+                <p>Alex Chen</p>
+                <small>Freelancer</small>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search jobs, freelancers, or skills...">
+            </div>
+
+            <div class="top-icons">
+                <i class="fa fa-bell"></i>
+                <div class="user">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar small profile-pic">
+                    <span>Alex Chen</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <h2>Browse Jobs</h2>
+        <p class="subtitle">Find your next project from thousands of opportunities</p>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="text" placeholder="Search jobs by title or description...">
+            <select placeholder="Category">
+                <option value="">All Categories</option>
+                <option value="development">Development</option>
+                <option value="design">Design</option>
+                <option value="analytics">Analytics</option>
+                <option value="media">Media</option>
+                <option value="writing">Writing</option>
+                <option value="marketing">Marketing</option>
+            </select>
+            <select placeholder="Budget">
+                <option value="">All Budgets</option>
+                <option value="0-1000">$0 - $1,000</option>
+                <option value="1000-5000">$1,000 - $5,000</option>
+                <option value="5000+">$5,000+</option>
+            </select>
+        </div>
+
+        <p class="showing">Showing 5 jobs</p>
+
+        <!-- Job Cards -->
+        <div class="jobs">
+
+            <!-- Job -->
+            <div class="job-card">
+                <div class="job-top">
+                    <h3>E-commerce Website Development</h3>
+                    <div class="price">
+                        <strong>$5,000</strong>
+                        <small>Fixed</small>
+                    </div>
+                </div>
+
+                <div class="meta">
+                    <span><i class="fa fa-user"></i> Sarah Johnson</span>
+                    <span><i class="fa fa-star"></i> 4.8</span>
+                    <span><i class="fa fa-clock"></i> Posted 3/5/2026</span>
+                </div>
+
+                <p>
+                    Looking for an experienced web developer to build a modern e-commerce platform with payment integration, shopping cart, and admin dashboard.
+                </p>
+
+                <div class="tags">
+                    <span>Web Development</span>
+                    <span>UI/UX Design</span>
+                </div>
+
+                <div class="job-bottom">
+                    <span><i class="fa fa-users"></i> 12 bids</span>
+                    <span>Deadline: 4/15/2026</span>
+                    <a href="Job_Details1.html" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+
+            <!-- Job -->
+            <div class="job-card">
+                <div class="job-top">
+                    <h3>Mobile App UI Design</h3>
+                    <div class="price">
+                        <strong>$2,500</strong>
+                        <small>Fixed</small>
+                    </div>
+                </div>
+
+                <div class="meta">
+                    <span><i class="fa fa-user"></i> Tech Innovations Inc.</span>
+                    <span><i class="fa fa-star"></i> 4.9</span>
+                    <span><i class="fa fa-clock"></i> Posted 3/4/2026</span>
+                </div>
+
+                <p>
+                    Need a talented UI/UX designer to create mockups and prototypes for a fitness tracking mobile application.
+                </p>
+
+                <div class="tags">
+                    <span>UI/UX Design</span>
+                    <span>Graphic Design</span>
+                </div>
+
+                <div class="job-bottom">
+                    <span><i class="fa fa-users"></i> 8 bids</span>
+                    <span>Deadline: 4/10/2026</span>
+                    <a href="Job_Details2.html" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+
+            <!-- Job -->
+            <div class="job-card">
+                <div class="job-top">
+                    <h3>Data Analysis and Visualization</h3>
+                    <div class="price">
+                        <strong>$75</strong>
+                        <small>Hourly</small>
+                    </div>
+                </div>
+
+                <div class="meta">
+                    <span><i class="fa fa-user"></i> Analytics Pro</span>
+                    <span><i class="fa fa-star"></i> 4.7</span>
+                    <span><i class="fa fa-clock"></i> Posted 3/10/2026</span>
+                </div>
+
+                <p>
+                    Seeking a data scientist to analyze sales data and create interactive dashboards for business insights.
+                </p>
+
+                <div class="tags">
+                    <span>Data Science</span>
+                </div>
+
+                <div class="job-bottom">
+                    <span><i class="fa fa-users"></i> 5 bids</span>
+                    <span>Deadline: 4/20/2026</span>
+                    <a href="Job_Details3.html" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

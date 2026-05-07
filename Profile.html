@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Profile</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="brand-logo">SkillBridge</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-briefcase"></i> Browse Jobs</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-file-invoice-dollar"></i> My Bids</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-shield-halved"></i> My Skills</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-wallet"></i> Earnings</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bell"></i> Notifications</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+            <div class="sidebar-user">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar-circle">
+                <div class="user-meta">
+                    <p class="name">Alex Chen</p>
+                    <p class="role">Freelancer</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search jobs, freelancers, or skills...">
+                </div>
+                <div class="header-right">
+                    <div class="notif-icon">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="badge-dot"></span>
+                    </div>
+                    <div class="profile-pill">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen" class="avatar-small">
+                        <span>Alex Chen</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="profile-container">
+                <section class="card profile-header-card">
+                    <div class="banner"></div>
+                    <div class="user-info-bar">
+                        <div class="user-main">
+                            <div class="profile-avatar-large">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Alex Chen">
+                            </div>
+                            <div class="user-text">
+                                <h1>Alex Chen</h1>
+                                <p class="tagline">Full-stack developer specializing in React and Node.js</p>
+                                <div class="meta-row">
+                                    <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                                    <span class="join-date"><i class="fa-regular fa-calendar"></i> Joined 11/11/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-outline-edit">Edit Profile</button>
+                    </div>
+                </section>
+
+                <section class="card standard-padding">
+                    <h3>About Me</h3>
+                    <p class="bio">Passionate developer with 5+ years of experience building modern web applications. I love creating clean, efficient, and user-friendly solutions.</p>
+                </section>
+
+                <section class="card standard-padding">
+                    <h3>Portfolio</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <div class="img-placeholder"></div>
+                            <h4>E-commerce Platform</h4>
+                            <p>Built a full-stack e-commerce solution</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="img-placeholder"></div>
+                            <h4>Task Management App</h4>
+                            <p>Created a collaborative task management tool</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card standard-padding">
+                    <h3>Work History & Reviews</h3>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <h4>Website Development</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <p class="reviewer">Sarah Johnson</p>
+                        <p class="review-text">Excellent work! Alex delivered ahead of schedule and the quality was outstanding.</p>
+                        <span class="review-date">2/21/2024</span>
+                    </div>
+                </section>
+
+                <section class="card standard-padding">
+                    <h3><i class="fa-solid fa-shield-halved text-teal"></i> Verified Skills</h3>
+                    <div class="skill-progress">
+                        <div class="skill-row">
+                            <label>Web Development</label>
+                            <span class="val">95%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill green" style="width: 95%;"></div></div>
+                        <span class="v-date">Verified: 1/15/2024</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-row">
+                            <label>UI/UX Design</label>
+                            <span class="val">92%</span>
+                        </div>
+                        <div class="progress-bar"><div class="fill green" style="width: 92%;"></div></div>
+                        <span class="v-date">Verified: 1/20/2024</span>
+                    </div>
+                </section>
+
+                <section class="card standard-padding">
+                    <h3>Stats</h3>
+                    <div class="stats-list">
+                        <div class="stat-row"><span>Total Earned</span><strong>$45,000</strong></div>
+                        <div class="stat-row"><span>Profile Views</span><strong>1,250</strong></div>
+                        <div class="stat-row"><span>Hourly Rate</span><strong>$75/hr</strong></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

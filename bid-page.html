@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Bid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .bid-container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 520px;
+      overflow: hidden;
+    }
+
+    .header {
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 15px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    .content {
+      padding: 24px;
+    }
+
+    .budget-box {
+      background: #f1f5f9;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .budget-label {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 4px;
+    }
+
+    .budget-amount {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1e2937;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #1e2937;
+    }
+
+    .required::after {
+      content: " *";
+      color: #ef4444;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    .dollar-sign {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64748b;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px 14px 45px;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #14b8a6;
+      box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+      padding: 14px 16px;
+    }
+
+    .hint {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 6px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    button {
+      flex: 1;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cancel-btn {
+      background: white;
+      color: #334155;
+      border: 2px solid #e2e8f0;
+    }
+
+    .submit-btn {
+      background: #14b8a6;
+      color: white;
+      border: none;
+    }
+
+    .submit-btn:hover {
+      background: #0f766e;
+    }
+
+    .tip {
+      background: #e0f2fe;
+      border-left: 4px solid #0ea5e9;
+      padding: 14px;
+      border-radius: 6px;
+      margin-top: 24px;
+      font-size: 14px;
+      color: #0c4a6e;
+    }
+
+    .tip strong {
+      color: #0369a1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bid-container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Place Your Bid</h1>
+      <p>E-commerce Website Development</p>
+      <span class="close-btn" onclick="closeModal()">×</span>
+    </div>
+
+    <div class="content">
+      <!-- Budget -->
+      <div class="budget-box">
+        <div class="budget-label">Client's Budget</div>
+        <div class="budget-amount">$5,000 <span style="font-size:16px; font-weight:500; color:#64748b;">(Fixed)</span></div>
+      </div>
+
+      <!-- Bid Amount -->
+      <div class="form-group">
+        <label class="required">Your Bid Amount</label>
+        <div class="input-wrapper">
+          <span class="dollar-sign">$</span>
+          <input type="number" id="bidAmount" placeholder="Enter your bid amount" required>
+        </div>
+        <div class="hint">Recommended to bid competitively while ensuring fair compensation</div>
+      </div>
+
+      <!-- Delivery Time -->
+      <div class="form-group">
+        <label class="required">Estimated Delivery Time</label>
+        <input type="text" id="deliveryTime" placeholder="e.g., 2 weeks, 1 month" required>
+      </div>
+
+      <!-- Cover Letter -->
+      <div class="form-group">
+        <label class="required">Cover Letter</label>
+        <textarea id="coverLetter" placeholder="Introduce yourself and explain why you're the best fit for this project..."></textarea>
+        <div class="hint">Highlight your relevant experience and skills</div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button class="cancel-btn" onclick="window.location.href='Job_Details1.html'">Cancel</button>
+        <button class="submit-btn" onclick="submitBid()">Submit Bid</button>
+      </div>
+
+      <!-- Tip -->
+      <div class="tip">
+        <strong>Tip:</strong> Clients are more likely to accept bids that demonstrate understanding of the project and showcase relevant experience.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function closeModal() {
+      alert("Modal Closed! (In real project, this will close the popup)");
+      // window.close(); or hide modal
+    }
+
+    function submitBid() {
+      const bidAmount = document.getElementById('bidAmount').value;
+      const deliveryTime = document.getElementById('deliveryTime').value;
+      const coverLetter = document.getElementById('coverLetter').value;
+
+      if (!bidAmount || !deliveryTime || !coverLetter) {
+        alert("Please fill in all required fields!");
+        return;
+      }
+
+      alert(`✅ Bid Submitted Successfully!\n\nBid Amount: $${bidAmount}\nDelivery Time: ${deliveryTime}`);
+      // Here you can send data to backend using fetch()
+    }
+
+    // Bonus: Auto format bid amount with comma
+    document.getElementById('bidAmount').addEventListener('input', function(e) {
+      let value = e.target.value.replace(/[^0-9.]/g, '');
+      e.target.value = value;
+    });
+  </script>
+
+</body>
+</html>
